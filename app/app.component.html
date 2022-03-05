@@ -1,0 +1,21 @@
+<nav *ngIf="currentUser">
+    UserName: {{ currentUser.username }}
+    <div class="d-flex justify-content-center p-1">
+      <a
+        class="
+          nav-item nav-link
+          btn-primary
+          text-center text-white
+          rounded
+          w-25
+        "
+        (click)="logout()"
+        >Logout</a
+      >
+    </div>
+</nav>
+
+<div class="p-2">
+  <alert></alert>
+  <router-outlet></router-outlet>
+</div>
